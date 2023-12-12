@@ -1,0 +1,73 @@
+#main-nav .container .socile {
+    display: none;
+}
+
+#main-nav .container {
+    grid-template-columns: 1fr;
+    grid-gap: 1.2rem;
+}
+
+#main-nav .container ul, #main-nav .container .logo {
+    justify-self: center;
+}
+
+#main-nav .container ul li a {
+    padding: .5rem;
+}
+
+/* Home Article Showcase */
+
+#home-article .article-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#home-article .article-container > *:first-child, 
+#home-article .article-container > *:last-child {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column: 1;
+}
+
+#prob a {
+    width: 80%;
+}
+
+/* Home Article End Showcase */
+
+/* About */
+
+#main-about .container .about-container .part-2 .card {
+    height: auto;
+}
+
+/* For small devices */
+ @media (max-width: 600px) {
+    /* Stack grid items */
+    
+    #showcase .showcase-container,
+    #home-article .article-container,
+    #main-footer .footer-container {
+        grid-template-columns:1fr;
+   } 
+
+    #main-footer .footer-container>*:last-child {
+        grid-column: 1;
+    }
+
+    /* Article page */
+    .page-container {
+        grid-template-columns: 1fr;
+    }
+    /* Article end page */
+/* About start section */
+
+#main-about .container .about-container {
+    grid-template-columns: 1fr;
+}
+
+#main-about .container .about-container .part-2 .card {
+    height: auto;
+}
+
+
+ }
+
